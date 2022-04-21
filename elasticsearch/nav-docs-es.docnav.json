@@ -1,12 +1,12 @@
 {
-  "mission": "Elastic 가이드북",
-  "id": "esdocs",
+  "mission": "Elasticsearch 가이드",
+  "id": "docs-es",
   "landingPageId": "00-overview",
   "icon": "logoElasticsearch",
-  "description": "Elastic을 처음 시작하는 분들을 위한 한국어 가이드북 입니다.",
+  "description": "처음 시작하는 분들을 위한 Elasticsearch 한글 가이드북 입니다.",
   "items": [
     {
-      "label": "Elastic 시작하기",
+      "label": "Elasticsearch 시작하기",
       "items": [
         { "id": "00-overview", "label": "서문" }
       ]
