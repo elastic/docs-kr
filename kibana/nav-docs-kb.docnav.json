@@ -1,9 +1,9 @@
 {
-  "mission": "Kibana 가이드",
+  "mission": "Kibana 가이드북",
   "id": "docs-kb",
   "landingPageId": "00-overview",
   "icon": "logoKibana",
-  "description": "처음 시작하는 분들을 위한 Kibana 한글 가이드북 입니다.",
+  "description": "Kibana 한글 가이드 문서 입니다.",
   "items": [
     {
       "label": "Kibana 시작하기",
