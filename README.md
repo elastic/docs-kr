@@ -1,4 +1,4 @@
-# Elastic 한국어 가이드
+## Elastic 한국어 가이드
 
 https://info-kr.elastic.co 웹사이트에 있는 다음 문서들의 소스입니다.
 - Elasticsearch 가이드

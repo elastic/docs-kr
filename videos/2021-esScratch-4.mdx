@@ -1,0 +1,58 @@
+---
+id: esScratch2021-4
+slug: /krVideos/esScratch2021-4
+title: Kibana 대시보드 만들기
+description: "Kibana의 다양한 시각화 도구를 사용하여 대시보드를 만들고 활용하는 방법에 대해 설명합니다."
+image: images/title_esScratch2021-4.png
+tags: ["videos", "esScratch"]
+related: ["esScratch2021-0", "esScratch2021-1", "esScratch2021-2", "esScratch2021-3"]
+---
+
+녹화일        | 발표자   | 사용된 제품 및 버전
+----        | ----   | ------ 
+2021-03-29   | [김종민](https://github.com/kimjmin/)(jongmin.kim@elastic.co)  | <DocBadge template="elasticsearch" /> <DocBadge template="kibana" /> `7.11`
+
+학습 자료 링크 : https://ela.st/es-resource-kr
+
+### 4-1 Kibana 살펴보기
+<DocVideo id="yF5z6zf4EH4" source="youtube" title="Kibana 살펴보기" />
+- Kibana Index Pattern
+  - Kibana 인덱스 패턴 생성
+  - 인덱스 패턴의 필드 속성 살펴보기
+- Discover
+  - 타임 피커를 이용한 데이터 시간 범위 조회
+  - 조회할 필드만 선택하기
+  - 검색 쿼리 및 필터 추가
+  - 각 필드의 Top 5 aggregation 값 확인
+
+### 4-2-1 Kibana 대시보드 만들기 (1) : Metric, Bar, Pie, Treemap
+<DocVideo id="fL_NSvhGquA" source="youtube" title="kibana 대시보드 만들기 : Metric Bar Pie Treemap" />
+- 기본 Visualization 패널 추가
+  - Metric 차트
+- Lens 를 이용한 패널 추가
+  - Lens - 시계열 바 차트
+  - Lens - 도넛 (파이) 차트
+  - Lens - Treemap
+
+### 4-2-2 Kibana 대시보드 만들기 (2) : Maps 를 이용한 위치정보 표시
+<DocVideo id="PhMtrCqUuGc" source="youtube" title="kibana 대시보드 만들기 : Maps 를 이용한 위치정보 표시" />
+- Maps 지도 추가
+  - Clusters and Grids - geo_point 로 위치 표시
+  - Choropleth - keyword 로 지역 표시
+- Elastic Map Service
+  - Elastic 에서 서비스하는 지도 정보
+  - World Countries 외 다양한 지도 데이터셋
+- elasticsearch 쿼리 조회
+  - View:Request 메뉴에서 kibana 가 elasticsearch 로 요청하는 쿼리 확인
+
+### 4-2-3 Kibana 대시보드 만들기 (3) : 컨트롤 도구, 도큐먼트 목록
+<DocVideo id="cCWhU7Kdf2c" source="youtube" title="kibana 대시보드 만들기 : 컨트롤 도구, 도큐먼트 목록" />
+- 대시보드에 필터 적용
+  - Add filter 메뉴를 이용한 필터 적용
+  - 시각화 도구에서 데이터 영역 선택
+- 대시보드에 컨트롤 도구 추가
+  - Option List - keyword 값을 선택해서 필터링
+  - Range Slider - 숫자/날짜 값의 범위로 필터링
+- 도큐먼트 목록 저장
+  - Discover 메뉴에서 필드 선택 후 도큐먼트 목록 저장
+  - 저장한 도큐먼트 목록 패널을 대시보드에 추가

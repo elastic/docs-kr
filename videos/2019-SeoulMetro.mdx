@@ -1,0 +1,45 @@
+---
+id: seoulMetro2019
+slug: /krVideos/seoulMetro2019
+title: (2019) 서울시 지하철 대시보드 만들기
+description: "서울시 공공데이터를 활용하여 Elasticsearch로 데이터를 수집하고 Kibana로 지하철 역별 시간대별 승하차 인원 대시보드를 만드는 과정을 보여줍니다."
+image: images/title_seoulMetro2019.png
+date: 2022-04-22
+tags: ["demos", "videos"]
+---
+
+녹화일        | 발표자   | 사용된 제품 및 버전
+----        | ----   | ------ 
+2019-08-30   | [김종민](https://github.com/kimjmin/)(jongmin.kim@elastic.co)  | <DocBadge template="escloud" /> <DocBadge template="elasticsearch" /> <DocBadge template="kibana" /> `7.3`
+
+### 1. 데이터 색인 및 인덱스 설정
+
+<DocVideo id="ypsEZXVYLo4" source="youtube" title="Elastic Stack을 이용한 서울시 지하철 대시보드 다시 만들기 1" />
+
+- 서울시 공공데이터 포털에서 데이터 수집
+- 역 위치정보 + 다국어 역명 정보 + 역별 시간대별 승하차 인원 데이터 세트 병합
+- Logstash 를 이용해 Elasticsearch 에 색인
+- 한국어 검색을 위한 노리(nori) 형태소 분석기 설정
+- _template 을 이용한 인덱스 템플릿 설정
+
+### 2. Kibana 대시보드 구성
+
+<DocVideo id="KzxpvgO8h5k" source="youtube" title="Elastic Stack을 이용한 서울시 지하철 대시보드 다시 만들기 2" />
+
+- Kibana 스페이스 생성 및 전환
+- Kibana 인덱스 패턴 생성
+- Discover : 필드 선택 및 쿼리 설정
+- Visualizations 메트릭, 바차트, 파이차트, 태그클라우드, 타임 시리즈 등
+- 지도
+- 대시보드 구성
+
+### 3. 스크립트, ingest pipeline 및 security 설정
+
+<DocVideo id="h1EAH4hTsiw" source="youtube" title="Elastic Stack을 이용한 서울시 지하철 대시보드 다시 만들기 3" />
+
+- Painless 스크립트 언어
+- 스크립트 필드
+- Ingest Pipeline 인제스트 파이프라인
+- Kibana hitmap 시각화 도구
+- Kibana Control 시각화 도구
+- Security 를 이용한 Guest 계정 생성 및 스페이스 지정

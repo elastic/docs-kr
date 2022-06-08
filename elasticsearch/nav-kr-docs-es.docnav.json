@@ -1,6 +1,6 @@
 {
   "mission": "Elasticsearch 가이드북",
-  "id": "docs-es",
+  "id": "krDocsEs",
   "landingPageId": "00-overview",
   "icon": "logoElasticsearch",
   "description": "Elasticsearch 한글 가이드 문서 입니다.",

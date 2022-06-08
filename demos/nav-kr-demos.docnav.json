@@ -1,0 +1,15 @@
+{
+  "mission": "Elastic 데모 모음",
+  "id": "krDemos",
+  "landingPageId": "overview",
+  "icon": "dashboardApp",
+  "description": "발표나 스터디 등에서 사용 가능한 데모들을 모아놓은 페이지 입니다.",
+  "items": [
+    {
+      "label": "Elastic 데모 모음",
+      "items": [
+        { "id": "overview", "label": "데모 모음 페이지 안내" }
+      ]
+    }
+  ]
+}
