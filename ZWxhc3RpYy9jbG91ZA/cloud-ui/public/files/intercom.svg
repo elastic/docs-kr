@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="945" height="945" viewBox="0 0 945 945">	
+  <defs>	
+    <circle id="intercom-b" cx="375.5" cy="375.5" r="375.5"/>	
+    <filter id="intercom-a" width="157.5%" height="157.5%" x="-28.8%" y="-28.8%" filterUnits="objectBoundingBox">	
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>	
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="72"/>	
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.103911713 0"/>	
+    </filter>	
+    <polygon id="intercom-c" points=".002 .028 369.998 .028 369.998 422.853 .002 422.853"/>	
+    <path id="intercom-f" d="M369.997931,422.85298 C369.997931,422.85298 307.710802,398.343232 257.31809,378.710069 L45.4255355,378.710069 C20.3415149,378.710069 0.00205037687,357.145997 0.00205037687,330.550295 L0.00205037687,48.1878019 C0.00205037687,21.5921101 20.3415149,0.0280384733 45.4255355,0.0280384733 L324.561221,0.0280384733 C349.64525,0.0280384733 369.98473,21.5921101 369.98473,48.1878019 L369.98473,291.368522 L369.997931,291.368522 L369.997931,422.85298 Z M315.310002,264.533223 C310.942915,259.147385 303.320458,258.524484 298.234891,263.137901 C297.838414,263.490246 258.388581,298.570631 184.986771,298.570631 C112.496866,298.570631 72.4390893,263.743968 71.7254267,263.109717 C66.6403051,258.518671 59.0376667,259.147187 54.6767499,264.519138 C52.5828322,267.101343 51.5431306,270.468708 51.7888343,273.872475 C52.0345419,277.276255 53.5452867,280.434229 55.9851386,282.644229 C57.8618132,284.335529 102.730228,324.264289 184.986771,324.264289 C267.25655,324.264289 312.124959,284.335529 314.001618,282.644229 C316.437499,280.434612 317.945628,277.279506 318.191292,273.879214 C318.43693,270.478908 317.399792,267.114675 315.310002,264.533223 Z"/>	
+    <filter id="intercom-e" width="168.1%" height="159.6%" x="-34.1%" y="-29.8%" filterUnits="objectBoundingBox">	
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>	
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="42"/>	
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0506446678 0"/>	
+    </filter>	
+  </defs>	
+  <g fill="none" fill-rule="evenodd" transform="translate(97 97)">	
+    <use fill="#000" filter="url(#intercom-a)" xlink:href="#intercom-b"/>	
+    <use fill="#006BB4" xlink:href="#intercom-b"/>	
+    <g transform="translate(191 164)">	
+      <mask id="intercom-d" fill="#fff">	
+        <use xlink:href="#intercom-c"/>	
+      </mask>	
+      <g mask="url(#intercom-d)">	
+        <use fill="#000" filter="url(#intercom-e)" xlink:href="#intercom-f"/>	
+        <use fill="#FFF" xlink:href="#intercom-f"/>	
+      </g>	
+    </g>	
+  </g>	
+</svg>

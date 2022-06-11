@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="209.25983mm"
+   height="89.898499mm"
+   viewBox="0 0 209.25983 89.898498"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="processor-architecture.svg"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   inkscape:export-filename="/home/ydubreuil/src/github.com/elastic/cloud/wiki/performance/images/processor-architecture.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5554293"
+     inkscape:cx="317.59721"
+     inkscape:cy="172.2997"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     width="387.10727mm" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient34764">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop34760" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop34762" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient34720">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop34716" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop34718" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient34720"
+       id="linearGradient34722"
+       x1="32.002308"
+       y1="148.36053"
+       x2="82.517311"
+       y2="148.36053"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient34764"
+       id="linearGradient34766"
+       x1="32.134808"
+       y1="148.36053"
+       x2="82.384811"
+       y2="148.36053"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(76.784322,20.477888)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.7417px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.268543"
+       x="-68.080307"
+       y="-6.354887"
+       id="text5602"><tspan
+         sodipodi:role="line"
+         id="tspan5600"
+         style="stroke-width:0.268543"
+         x="-68.080307"
+         y="-6.354887">Physical world</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.7417px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.268543"
+       x="83.277954"
+       y="-12.316713"
+       id="text5602-8"><tspan
+         sodipodi:role="line"
+         id="tspan5600-4"
+         style="text-align:center;text-anchor:middle;stroke-width:0.268543"
+         x="83.277954"
+         y="-12.316713">Operating</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.268543"
+         x="83.277954"
+         y="1.1104119"
+         id="tspan44951">System world</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.168476px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 28.096,-14.360597 28.07117,69.420587"
+       id="path21925"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.831324;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-9"
+       width="89.999359"
+       height="61.337849"
+       x="-76.36866"
+       y="6.656826" />
+    <rect
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.831324;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-9-5"
+       width="89.999359"
+       height="61.337849"
+       x="42.06049"
+       y="7.0547428" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.465558;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-2"
+       width="37.177662"
+       height="40.498264"
+       x="-71.969749"
+       y="21.923626" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0.26959;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944"
+       width="29.981295"
+       height="13.30133"
+       x="-68.750191"
+       y="34.400089" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-54.062874"
+       y="39.348164"
+       id="text32316"><tspan
+         sodipodi:role="line"
+         id="tspan32314"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-54.062874"
+         y="39.348164">Hardware</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-54.062874"
+         y="46.481052"
+         id="tspan32318">thread</tspan></text>
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0.26959;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-3"
+       width="29.981295"
+       height="13.30133"
+       x="-68.750191"
+       y="47.701424" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-54.062874"
+       y="52.649502"
+       id="text32316-9"><tspan
+         sodipodi:role="line"
+         id="tspan32314-4"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-54.062874"
+         y="52.649502">Hardware</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-54.062874"
+         y="59.782391"
+         id="tspan32318-8">thread</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.65622px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216405"
+       x="-67.371193"
+       y="29.863785"
+       id="text26246"><tspan
+         sodipodi:role="line"
+         id="tspan26244"
+         style="stroke-width:0.216405"
+         x="-67.371193"
+         y="29.863785">Core 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.65622px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216405"
+       x="-53.020569"
+       y="17.619678"
+       id="text26246-1"><tspan
+         sodipodi:role="line"
+         id="tspan26244-1"
+         style="stroke-width:0.216405"
+         x="-53.020569"
+         y="17.619678">Processor</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.465558;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-2-9"
+       width="37.177662"
+       height="40.498264"
+       x="-29.461876"
+       y="21.995029" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.257722;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-2-9-9"
+       width="24.079998"
+       height="19.161009"
+       x="55.003281"
+       y="17.792833" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.482149;stroke-miterlimit:4;stroke-dasharray:0.482149, 0.964297;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect26944-2-9-9-9"
+       width="28.967714"
+       height="55.743912"
+       x="52.739037"
+       y="9.3784866" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0.26959;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-0"
+       width="29.981295"
+       height="13.30133"
+       x="-26.242315"
+       y="34.471493" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-11.555002"
+       y="39.419567"
+       id="text32316-8"><tspan
+         sodipodi:role="line"
+         id="tspan32314-8"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-11.555002"
+         y="39.419567">Hardware</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-11.555002"
+         y="46.552456"
+         id="tspan32318-5">thread</tspan></text>
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:0.26959;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-3-0"
+       width="29.981295"
+       height="13.30133"
+       x="-26.242315"
+       y="47.772835" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="-11.555002"
+       y="52.720901"
+       id="text32316-9-9"><tspan
+         sodipodi:role="line"
+         id="tspan32314-4-6"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-11.555002"
+         y="52.720901">Hardware</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="-11.555002"
+         y="59.85379"
+         id="tspan32318-8-3">thread</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.65622px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216405"
+       x="-24.829506"
+       y="29.93519"
+       id="text26246-8"><tspan
+         sodipodi:role="line"
+         id="tspan26244-5"
+         style="stroke-width:0.216405"
+         x="-24.829506"
+         y="29.93519">Core 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142658"
+       x="58.549294"
+       y="29.45052"
+       id="text54407"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.142658"
+         x="58.549294"
+         y="29.45052"
+         id="tspan54409">CPU 0</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.257722;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-2-9-9-5"
+       width="24.079998"
+       height="19.161009"
+       x="55.008507"
+       y="43.055801" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142658"
+       x="58.55452"
+       y="54.713486"
+       id="text54407-3"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.142658"
+         x="58.55452"
+         y="54.713486"
+         id="tspan54409-5">CPU 1</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.257722;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-2-9-9-6"
+       width="24.079998"
+       height="19.161009"
+       x="93.81871"
+       y="17.664238" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142658"
+       x="97.364723"
+       y="29.32193"
+       id="text54407-2"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.142658"
+         x="97.364723"
+         y="29.32193"
+         id="tspan54409-9">CPU 2</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.257722;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26944-2-9-9-1"
+       width="24.079998"
+       height="19.161009"
+       x="93.883003"
+       y="43.717388" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142658"
+       x="97.429016"
+       y="55.375069"
+       id="text54407-27"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.142658"
+         x="97.429016"
+         y="55.375069"
+         id="tspan54409-0">CPU 3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142658"
+       x="57.192642"
+       y="15.812099"
+       id="text12498"><tspan
+         sodipodi:role="line"
+         id="tspan12496"
+         style="stroke-width:0.142658"
+         x="57.192642"
+         y="15.812099">Core 1</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.482149;stroke-miterlimit:4;stroke-dasharray:0.482149, 0.964297;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect26944-2-9-9-9-3"
+       width="28.967714"
+       height="55.743912"
+       x="91.179291"
+       y="9.19765" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.70631px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.142658"
+       x="96.440559"
+       y="15.612378"
+       id="text12498-6"><tspan
+         sodipodi:role="line"
+         id="tspan12496-0"
+         style="stroke-width:0.142658"
+         x="96.440559"
+         y="15.612378">Core 2</tspan></text>
+  </g>
+</svg>

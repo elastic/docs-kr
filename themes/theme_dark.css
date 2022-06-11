@@ -1,0 +1,1320 @@
+/**
+The MIT License (MIT)
+
+Copyright (c) 2015 strarsis https://github.com/strarsis/sass-math-pow
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+/**
+The MIT License (MIT)
+
+Copyright (c) 2015 strarsis https://github.com/strarsis/sass-math-pow
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+/**
+ * 1. Focus rings shouldn't be visible on scrollable regions, but a11y requires them to be focusable.
+ *    Browser's supporting `:focus-visible` will still show outline on keyboard focus only.
+ *    Others like Safari, won't show anything at all.
+ * 2. Force the `:focus-visible` when the `tabindex=0` (is tabbable)
+ */
+/*
+ * Creates the Amsterdam style of button with a transparent background
+ */
+/*
+ * Creates the Amsterdam style of fill button
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+body.euiBody--headerIsFixed {
+  padding-top: 48px;
+}
+body.euiBody--headerIsFixed:not(.euiDataGrid__restrictBody) .euiFlyout,
+body.euiBody--headerIsFixed .euiCollapsibleNav {
+  top: 48px;
+  height: calc(100% - 48px);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body.euiBody--headerIsFixed .euiPageSideBar--sticky {
+    max-height: calc(100vh - 48px);
+    top: 48px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body.euiBody--headerIsFixed .euiPageSideBar--sticky {
+    max-height: calc(100vh - 48px);
+    top: 48px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body.euiBody--headerIsFixed .euiPageSideBar--sticky {
+    max-height: calc(100vh - 48px);
+    top: 48px;
+  }
+}
+body.euiBody--headerIsFixed:not(.euiDataGrid__restrictBody) .euiOverlayMask--belowHeader {
+  top: 48px;
+}
+
+.docWrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 48px);
+}
+
+.docAccordion {
+  flex-grow: 1;
+}
+.docAccordion.docAccordion--flexGrowZero {
+  flex-grow: 0;
+}
+.docAccordion.docAccordion--hasShadow {
+  box-shadow: 0 0.9px 4px -1px rgba(0, 0, 0, 0.2), 0 2.6px 8px -1px rgba(0, 0, 0, 0.15), 0 5.7px 12px -1px rgba(0, 0, 0, 0.125), 0 15px 15px -1px rgba(0, 0, 0, 0.1);
+}
+.docAccordion.docAccordion--hasBorder {
+  border: 1px solid #343741;
+  box-shadow: none;
+}
+.docAccordion.docAccordion--isClickable {
+  transition: all 150ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+.docAccordion.docAccordion--isClickable:enabled {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.docAccordion.docAccordion--isClickable:hover, .docAccordion.docAccordion--isClickable:focus {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 3.6px 13px rgba(0, 0, 0, 0.175), 0 8.4px 23px rgba(0, 0, 0, 0.15), 0 23px 35px rgba(0, 0, 0, 0.125);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+.docAccordion.docAccordion--borderRadiusNone {
+  border-radius: 0;
+}
+.docAccordion.docAccordion--borderRadiusMedium {
+  border-radius: 6px;
+}
+.docAccordion.docAccordion--transparent {
+  background-color: transparent;
+}
+.docAccordion.docAccordion--plain {
+  background-color: #1D1E24;
+}
+.docAccordion.docAccordion--subdued {
+  background-color: #141519;
+}
+.docAccordion.docAccordion--accent {
+  background-color: #4a2b39;
+}
+.docAccordion.docAccordion--primary {
+  background-color: #103148;
+}
+.docAccordion.docAccordion--success {
+  background-color: #264341;
+}
+.docAccordion.docAccordion--warning {
+  background-color: #493f22;
+}
+.docAccordion.docAccordion--danger {
+  background-color: #4a201e;
+}
+
+.docAccordion {
+  padding: 8px;
+  box-shadow: 0 0 0.8px rgba(0, 0, 0, 0.15), 0 0 2px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 0 17px rgba(0, 0, 0, 0.075);
+}
+.docAccordion.euiAccordion-isOpen .docAccordion__childWrapper {
+  padding: 16px 8px 8px 28px;
+}
+
+.docAccordion__button {
+  font-weight: 700;
+  color: #36A2EF;
+}
+
+.docDefinitionAccordion {
+  transition: ease-in-out transform 0.3s;
+}
+.docDefinitionAccordion .euiFlexGroup.extraButtons {
+  visibility: hidden;
+}
+.docDefinitionAccordion .docDefinitionAccordion_expanded {
+  transform: rotate(-90deg);
+  transition: ease-in transform 0.1s;
+  margin-right: 8px;
+}
+.docDefinitionAccordion .docDefinitionAccordion_collapsed {
+  transform: rotate(0deg);
+  transition: ease-in transform 0.1s;
+  margin-right: 8px;
+}
+.docDefinitionAccordion .docDefinitionAccordion__label {
+  margin-right: 8px;
+}
+.docDefinitionAccordion:hover {
+  cursor: pointer;
+}
+.docDefinitionAccordion:hover .euiFlexGroup.extraButtons {
+  visibility: visible;
+}
+.docDefinitionAccordion:hover .docDefinitionAccordion__label {
+  background-color: #9170B8;
+  color: #1D1E24;
+}
+
+.docDefinitionAccordion__child {
+  padding: 0 8px 8px 28px;
+}
+
+.docDefinition {
+  padding: 8px;
+  position: relative;
+}
+
+.docDefinition .docDefinition {
+  border-left: 1px solid #343741;
+}
+
+.docDefinition .docDefinition {
+  margin-left: 16px;
+}
+
+.docDefinition .docDefinitionList {
+  margin-top: 8px;
+}
+
+.docDefinition__badge, .docDefinition__required {
+  border-color: #25262E;
+}
+
+.docDefinition__required {
+  color: #F68FBE;
+}
+
+.docDefinition__signature .euiCodeBlock__pre {
+  margin-bottom: 8px !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.docDefinition__defaultLabel {
+  color: #7a7f89;
+  font-weight: 400;
+}
+
+.docDefinition__return {
+  margin-bottom: 8px;
+}
+
+.docDefinition .euiAccordion__triggerWrapper:hover .docDefinition__label {
+  color: #FFF;
+  background-color: #9170B8;
+}
+.docDefinition .euiAccordion__triggerWrapper:hover .docDefinition__copy, .docDefinition .euiAccordion__triggerWrapper:hover .docDefinition__link {
+  visibility: visible;
+}
+
+.docLandingHero {
+  background: #25262E;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.docLandingHero .docLandingHero__iconWrapper {
+  align-items: center;
+  justify-content: center;
+}
+.docLandingHero .docLandingHero__iconWrapper .docLandingHero__icon {
+  height: 160px;
+  width: 160px;
+  fill-opacity: 0.2;
+}
+
+@media only screen and (max-width: 574px) {
+  .euiFlexGroup.docLandingHero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .euiFlexGroup.docLandingHero .docLandingHero__icon {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .euiFlexGroup.docLandingHero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .euiFlexGroup.docLandingHero .docLandingHero__icon {
+    height: 80px;
+    width: 80px;
+  }
+}
+.docTabbedContent__topPadding .euiTabs {
+  margin-bottom: 16px;
+}
+
+footer.docChromeFooter {
+  background: #36A2EF;
+  flex-shrink: 0;
+}
+footer.docChromeFooter .docChromeFooter__container {
+  max-width: 1280px;
+  padding: 24px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  footer.docChromeFooter .docChromeFooter__container .euiText p:not(:last-child) {
+    margin-bottom: 8px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  footer.docChromeFooter .docChromeFooter__container .euiText p:not(:last-child) {
+    margin-bottom: 8px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  footer.docChromeFooter .docChromeFooter__container .euiText p:not(:last-child) {
+    margin-bottom: 8px !important;
+  }
+}
+footer.docChromeFooter .docChromeFooter__logo {
+  width: 64px;
+}
+@media only screen and (max-width: 574px) {
+  footer.docChromeFooter .docChromeFooter__logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  footer.docChromeFooter .docChromeFooter__logo img {
+    max-width: 64px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  footer.docChromeFooter .docChromeFooter__logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  footer.docChromeFooter .docChromeFooter__logo img {
+    max-width: 64px;
+  }
+}
+footer.docChromeFooter .docChromeFooter__divide {
+  padding: 0 8px;
+  color: rgba(29, 30, 36, 0.3);
+}
+@media only screen and (max-width: 574px) {
+  footer.docChromeFooter {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  footer.docChromeFooter {
+    text-align: center;
+  }
+}
+footer.docChromeFooter ::selection {
+  background: #128ae0;
+}
+
+.docArticle__template .euiPageSideBar--paddingLarge, .search-page .euiPageSideBar--paddingLarge {
+  min-width: 270px;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 574px) {
+  .docArticle__template .euiPageSideBar--paddingLarge, .search-page .euiPageSideBar--paddingLarge {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docArticle__template .euiPageSideBar--paddingLarge, .search-page .euiPageSideBar--paddingLarge {
+    padding: 0;
+  }
+}
+
+.docChrome__contextMenu .euiContextMenuPanelTitle,
+.docChrome__contextMenu .euiContextMenuItem {
+  padding: 12px 0;
+}
+
+.docChrome__contextMenu .euiContextMenuPanelTitle {
+  margin-bottom: 12px;
+}
+
+.docChrome__contextMenu .euiContextMenuItem__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.docChrome__sidebar-item .euiSideNavItemButton:focus {
+  text-decoration: none;
+}
+.docChrome__sidebar-item .euiSideNavItemButton-isSelected {
+  border-radius: 4px;
+  background-color: rgba(54, 162, 239, 0.2);
+  transition: background 150ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+.docChrome__sidebar-item .euiSideNavItemButton-isSelected .euiSideNavItemButton__content .euiSideNavItemButton__label {
+  text-decoration: none;
+  font-weight: 500;
+}
+.docChrome__sidebar-item .euiSideNavItemButton-isSelected .euiSideNavItemButton__content .euiSideNavItemButton__label:focus {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .docArticle__sideNav {
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .docArticle__sideNav {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .docArticle__article {
+    width: 100%;
+  }
+
+  .docChrome__sidebar .docChrome__contextMenu {
+    width: 100%;
+  }
+  .docChrome__sidebar .docChrome__contextMenu .euiContextMenuPanelTitle {
+    margin-bottom: 0;
+    padding-left: 12px;
+  }
+  .docChrome__sidebar .docChrome__contextMenu .euiContextMenuItem {
+    padding-left: 12px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docArticle__article {
+    width: 100%;
+  }
+
+  .docChrome__sidebar .docChrome__contextMenu {
+    width: 100%;
+  }
+  .docChrome__sidebar .docChrome__contextMenu .euiContextMenuPanelTitle {
+    margin-bottom: 0;
+    padding-left: 12px;
+  }
+  .docChrome__sidebar .docChrome__contextMenu .euiContextMenuItem {
+    padding-left: 12px;
+  }
+}
+.docChromeSearch {
+  height: 210px;
+  background-color: #289bee;
+  box-shadow: inset 0px -2px 2px rgba(200, 200, 200, 0.2);
+  transition: ease-out all 3s;
+  position: relative;
+  overflow: hidden;
+}
+.docChromeSearch ::selection, .docChromeSearch ::-moz-selection {
+  background: #128ae0;
+}
+.docChromeSearch:hover {
+  background-color: #128ae0;
+}
+.docChromeSearch:hover .docChromeSearch__circle--pink {
+  transform: translateX(-8px) translateY(16px);
+}
+.docChromeSearch:hover .docChromeSearch__circle--blue {
+  transform: translateX(-8px) translateY(16px);
+}
+.docChromeSearch:hover .docChromeSearch__circle--blue-left {
+  transform: translateX(16px) translateY(-16px);
+}
+.docChromeSearch:hover .docChromeSearch__circle--green {
+  transform: translateX(8px) translateY(-8px);
+}
+.docChromeSearch .docChromeSearch__title {
+  font-size: 48px;
+  font-size: 3.4285714286rem;
+  text-align: center;
+  color: #1D1E24;
+  font-weight: 700;
+  line-height: 0.825;
+}
+.docChromeSearch .docChromeSearch__subtitle {
+  text-align: center;
+  color: #1D1E24;
+}
+.docChromeSearch .docChromeSearch__circle--green {
+  position: absolute;
+  left: -124px;
+  top: -5%;
+  transition: all 2s ease-in-out;
+}
+.docChromeSearch .docChromeSearch__circle--blue-left {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  transition: all 1.2s ease-in-out;
+}
+.docChromeSearch .docChromeSearch__circle--blue {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  transition: all 1.5s ease;
+}
+.docChromeSearch .docChromeSearch__circle--pink {
+  position: absolute;
+  top: -32px;
+  right: 5%;
+  transition: all 1.5s ease-in-out;
+}
+
+.docChromeSearch__searchBar {
+  margin-top: -48px;
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper form {
+  height: 48px;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchIcon {
+  align-items: baseline;
+  margin-top: 16px;
+  left: 12px;
+  top: 20px;
+  pointer-events: none;
+  position: absolute;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput {
+  max-width: 400px;
+  width: 100%;
+  height: 40px;
+  background-color: #16171c;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  box-shadow: 0 0 transparent, inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 150ms ease-in, background-image 150ms ease-in, background-size 150ms ease-in, background-color 150ms ease-in;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  letter-spacing: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-kerning: normal;
+  font-size: 14px;
+  color: #DFE5EF;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  padding-left: 40px;
+  box-shadow: 0 0.9px 4px -1px rgba(0, 0, 0, 0.2), 0 2.6px 8px -1px rgba(0, 0, 0, 0.15), 0 5.7px 12px -1px rgba(0, 0, 0, 0.125), 0 15px 15px -1px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  width: 100%;
+  max-width: 800px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  padding: 0 24px 0 40px;
+  margin-top: 16px;
+  transition: none;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--fullWidth {
+  max-width: 100%;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed {
+  height: 32px;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--inGroup {
+  height: 100%;
+}
+@supports (-moz-appearance: none) {
+  .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput {
+    transition-property: box-shadow, background-image, background-size;
+  }
+}
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput {
+    line-height: 1em;
+  }
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput::-webkit-input-placeholder {
+  color: #81858f;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput::-moz-placeholder {
+  color: #81858f;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:-ms-input-placeholder {
+  color: #81858f;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:-moz-placeholder {
+  color: #81858f;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput::placeholder {
+  color: #81858f;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:invalid {
+  background-image: linear-gradient(to top, #F86B63, #F86B63 2px, transparent 2px, transparent 100%);
+  background-size: 100%;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:focus {
+  background-color: #111216;
+  background-image: linear-gradient(to top, #36A2EF, #36A2EF 2px, transparent 2px, transparent 100%);
+  background-size: 100% 100%;
+  outline: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:disabled {
+  color: #535966;
+  -webkit-text-fill-color: #535966;
+  cursor: not-allowed;
+  background: #202128;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:disabled::-webkit-input-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:disabled::-moz-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:disabled:-ms-input-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:disabled:-moz-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:disabled::placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput[readOnly] {
+  cursor: default;
+  color: #DFE5EF;
+  -webkit-text-fill-color: #DFE5EF;
+  background: #1D1E24;
+  border-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:-webkit-autofill {
+  -webkit-text-fill-color: #343741;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:-webkit-autofill ~ .euiFormControlLayoutIcons {
+  color: #343741;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed {
+  background-color: #16171c;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 150ms ease-in, background-image 150ms ease-in, background-size 150ms ease-in, background-color 150ms ease-in;
+  padding: 8px;
+  border-radius: 4px;
+}
+@supports (-moz-appearance: none) {
+  .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed {
+    transition-property: box-shadow, background-image, background-size;
+  }
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:invalid {
+  background-image: linear-gradient(to top, #F86B63, #F86B63 2px, transparent 2px, transparent 100%);
+  background-size: 100%;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:focus {
+  background-color: #111216;
+  background-image: linear-gradient(to top, #36A2EF, #36A2EF 2px, transparent 2px, transparent 100%);
+  background-size: 100% 100%;
+  outline: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:disabled {
+  color: #535966;
+  -webkit-text-fill-color: #535966;
+  cursor: not-allowed;
+  background: #202128;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:disabled::-webkit-input-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:disabled::-moz-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:disabled:-ms-input-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:disabled:-moz-placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed:disabled::placeholder {
+  color: #535966;
+  opacity: 1;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--compressed[readOnly] {
+  cursor: default;
+  color: #DFE5EF;
+  -webkit-text-fill-color: #DFE5EF;
+  background: #1D1E24;
+  border-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput--inGroup {
+  box-shadow: none !important;
+  border-radius: 0;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchbox__textInput:focus {
+  box-shadow: 0 0.9px 4px -1px rgba(0, 0, 0, 0.2), 0 2.6px 8px -1px rgba(0, 0, 0, 0.15), 0 5.7px 12px -1px rgba(0, 0, 0, 0.125), 0 15px 15px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 150ms ease-in, background-image 150ms ease-in, background-size 150ms ease-in, background-color 150ms ease-in;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__submit {
+  display: none;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__autocomplete-container {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 3.6px 13px rgba(0, 0, 0, 0.175), 0 8.4px 23px rgba(0, 0, 0, 0.15), 0 23px 35px rgba(0, 0, 0, 0.125);
+  background: #1D1E24;
+  width: 100%;
+  padding: 8px 0 12px 0;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__section-title {
+  font-size: 12px;
+  font-size: 0.8571428571rem;
+  line-height: 1.1428571429rem;
+  padding: 12px 12px 8px 12px;
+  color: #7a7f89;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li,
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list li {
+  padding: 8px 12px;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li[aria-selected=true], .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li:hover, .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li:active,
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list li[aria-selected=true],
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list li:hover,
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list li:active {
+  background: #36A2EF;
+  color: #1D1E24;
+  cursor: pointer;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list {
+  padding-bottom: 8px;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path fill="rgb%2883, 89, 102%29" d="M11.271 11.978L15.1427 15.8507C15.2407 15.9477 15.3687 15.9967 15.4967 15.9967C15.6247 15.9967 15.7527 15.9477 15.8507 15.8507C16.0457 15.6547 16.0457 15.3387 15.8507 15.1427L12.2861 11.5791C14.6669 8.8324 14.5527 4.65637 11.9438 2.04675C9.21444 -0.68225 4.77356 -0.68225 2.04624 2.04675C-0.682079 4.77575 -0.682079 9.21775 2.04624 11.9467C3.36891 13.2687 5.12647 13.9967 6.995 13.9967C7.27093 13.9967 7.49487 13.7727 7.49487 13.4967C7.49487 13.2207 7.27093 12.9967 6.995 12.9967C5.3924 12.9967 3.88678 12.3727 2.75306 11.2397C0.414647 8.89975 0.414647 5.09375 2.75306 2.75375C5.09048 0.41375 8.89552 0.41475 11.2369 2.75375C13.5754 5.09375 13.5754 8.89975 11.2369 11.2397C11.042 11.4347 11.042 11.7517 11.2369 11.9467C11.2479 11.9578 11.2593 11.9682 11.271 11.978Z"/></svg>');
+  margin-right: 12px;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li[aria-selected=true]::before, .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li:hover::before, .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__suggestion-list li:active::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><path fill="rgb%2829, 30, 36%29" d="M11.271 11.978L15.1427 15.8507C15.2407 15.9477 15.3687 15.9967 15.4967 15.9967C15.6247 15.9967 15.7527 15.9477 15.8507 15.8507C16.0457 15.6547 16.0457 15.3387 15.8507 15.1427L12.2861 11.5791C14.6669 8.8324 14.5527 4.65637 11.9438 2.04675C9.21444 -0.68225 4.77356 -0.68225 2.04624 2.04675C-0.682079 4.77575 -0.682079 9.21775 2.04624 11.9467C3.36891 13.2687 5.12647 13.9967 6.995 13.9967C7.27093 13.9967 7.49487 13.7727 7.49487 13.4967C7.49487 13.2207 7.27093 12.9967 6.995 12.9967C5.3924 12.9967 3.88678 12.3727 2.75306 11.2397C0.414647 8.89975 0.414647 5.09375 2.75306 2.75375C5.09048 0.41375 8.89552 0.41475 11.2369 2.75375C13.5754 5.09375 13.5754 8.89975 11.2369 11.2397C11.042 11.4347 11.042 11.7517 11.2369 11.9467C11.2479 11.9578 11.2593 11.9682 11.271 11.978Z"/></svg>');
+  margin-right: 12px;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list em {
+  font-style: normal;
+  color: #36A2EF;
+}
+.docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list li[aria-selected=true] em, .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list li:hover em, .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .sui-search-box__results-list li:active em {
+  color: #1D1E24;
+}
+.docChromeSearch__searchBar.isSticky {
+  width: 400px;
+  align-self: center;
+}
+.docChromeSearch__searchBar.isSticky .docChromeSearch__searchbox-wrapper {
+  max-width: 400px;
+}
+.docChromeSearch__searchBar.isSticky .docChromeSearch__searchbox-wrapper .docChromeSearch__searchIcon {
+  top: 0;
+  color: #98A2B3;
+}
+.docChromeSearch__searchBar.isSticky .docChromeSearch__searchbox__textInput {
+  height: 32px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+  margin: 8px auto 0;
+  background: transparent;
+  border-radius: 4px;
+  color: #1D1E24;
+  transition: background-color 150ms ease-in;
+}
+.docChromeSearch__searchBar.isSticky .docChromeSearch__searchbox__textInput:focus {
+  color: #D4DAE5;
+}
+
+@media only screen and (max-width: 574px) {
+  .docChromeSearch {
+    display: none;
+  }
+
+  .docChromeSearch__searchBar.isSticky .docChromeSearch__searchbox-wrapper {
+    max-width: 100%;
+  }
+
+  .docChromeSearch__searchBar {
+    margin-top: 0;
+    top: auto;
+    position: relative;
+    height: 56px;
+    z-index: 999;
+  }
+  .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper form {
+    box-shadow: 0 0.7px 1.4px rgba(0, 0, 0, 0.175), 0 1.9px 4px rgba(0, 0, 0, 0.125), 0 4.5px 10px rgba(0, 0, 0, 0.125);
+    background: #25262E;
+    border-bottom: 1px solid #343741;
+    padding: 8px 12px;
+    justify-content: center;
+    flex-direction: column;
+    height: 56px;
+  }
+  .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchIcon {
+    margin-top: 0;
+    left: 24px;
+  }
+  .docChromeSearch__searchBar .sui-search-box .sui-search-box__autocomplete-container {
+    top: 80px;
+    width: 100%;
+  }
+  .docChromeSearch__searchBar .sui-search-box .sui-search-box__text-input {
+    margin-top: 0;
+    box-shadow: none;
+    height: 40px;
+    border: 1px solid #343741;
+    border-radius: 4px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docChromeSearch {
+    display: none;
+  }
+
+  .docChromeSearch__searchBar.isSticky .docChromeSearch__searchbox-wrapper {
+    max-width: 100%;
+  }
+
+  .docChromeSearch__searchBar {
+    margin-top: 0;
+    top: auto;
+    position: relative;
+    height: 56px;
+    z-index: 999;
+  }
+  .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper form {
+    box-shadow: 0 0.7px 1.4px rgba(0, 0, 0, 0.175), 0 1.9px 4px rgba(0, 0, 0, 0.125), 0 4.5px 10px rgba(0, 0, 0, 0.125);
+    background: #25262E;
+    border-bottom: 1px solid #343741;
+    padding: 8px 12px;
+    justify-content: center;
+    flex-direction: column;
+    height: 56px;
+  }
+  .docChromeSearch__searchBar .docChromeSearch__searchbox-wrapper .docChromeSearch__searchIcon {
+    margin-top: 0;
+    left: 24px;
+  }
+  .docChromeSearch__searchBar .sui-search-box .sui-search-box__autocomplete-container {
+    top: 80px;
+    width: 100%;
+  }
+  .docChromeSearch__searchBar .sui-search-box .sui-search-box__text-input {
+    margin-top: 0;
+    box-shadow: none;
+    height: 40px;
+    border: 1px solid #343741;
+    border-radius: 4px;
+  }
+}
+.sui-sorting .sui-sorting__label {
+  color: #535966;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.sui-facet {
+  margin-top: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #343741;
+}
+.sui-facet .sui-facet__title {
+  color: #535966;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+.sui-facet .sui-multi-checkbox-facet__option-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+.sui-facet .sui-multi-checkbox-facet__option-label:hover {
+  cursor: pointer;
+}
+.sui-facet .sui-multi-checkbox-facet__option-label .sui-multi-checkbox-facet__option-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sui-facet .sui-multi-checkbox-facet__option-label .sui-multi-checkbox-facet__checkbox {
+  margin-right: 8px;
+}
+.sui-facet .sui-multi-checkbox-facet__option-label .sui-multi-checkbox-facet__input-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sui-facet .sui-multi-checkbox-facet__option-label input[type=checkbox]:checked + .sui-multi-checkbox-facet__input-text {
+  font-weight: bold;
+}
+.sui-facet .sui-multi-checkbox-facet__option-label .sui-multi-checkbox-facet__option-count {
+  background: #343741;
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.sui-facet .sui-facet-view-more {
+  padding: 12px 0;
+  color: #36A2EF;
+}
+
+.sui-results-per-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sui-results-per-page .sui-results-per-page__label {
+  padding-right: 12px;
+  color: #98A2B3;
+}
+
+.sui-select__control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #FBFCFD;
+  box-shadow: 0 0 transparent, inset 0 0 0 1px rgba(17, 43, 134, 0.1);
+  transition: box-shadow 150ms ease-in, background-image 150ms ease-in, background-size 150ms ease-in, background-color 150ms ease-in;
+  border-radius: 4px;
+  padding: 0 8px;
+  appearance: none;
+  line-height: 40px;
+}
+.sui-select__control .sui-select__dropdown-indicator svg {
+  vertical-align: text-bottom;
+}
+
+.sui-select__menu .sui-select__menu-list .sui-select__option {
+  padding: 8px 12px;
+}
+.sui-select__menu .sui-select__menu-list .sui-select__option:hover {
+  background-color: #25262E;
+  cursor: pointer;
+}
+.sui-select__menu .sui-select__menu-list .sui-select__option--is-selected {
+  color: #535966;
+}
+.sui-select__menu .sui-select__menu-list .sui-select__option--is-selected:hover {
+  cursor: default;
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .search-page .euiPageSideBar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .search-page .euiPageSideBar {
+    display: none;
+  }
+}
+.docChromeSearchResult {
+  border-bottom: 1px solid #25262E;
+  padding: 24px 12px;
+  border-radius: 4px;
+}
+.docChromeSearchResult:hover {
+  cursor: pointer;
+  background-color: #25262E;
+}
+.docChromeSearchResult .docChromeSearchResult__title {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  word-break: break-word;
+  color: #DFE5EF;
+  font-size: 16px;
+  font-size: 1.1428571429rem;
+  line-height: 1.7142857143rem;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+.docChromeSearchResult .docChromeSearchResult__title em {
+  color: #36A2EF;
+  font-style: normal;
+}
+.docChromeSearchResult .docChromeSearchResult__description em {
+  font-style: normal;
+  font-weight: 600;
+  background-color: rgba(96, 146, 192, 0.2);
+  color: #D4DAE5;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+.docChromeSearchResult .docChromeSearchResult__date {
+  font-size: 0.875rem;
+}
+.docChromeSearchResult .docChromeSearchResult__icon {
+  max-height: 2.85rem;
+  margin-top: 0.65rem;
+}
+
+.docChromeSearch__paging {
+  display: flex;
+  flex-direction: row;
+}
+.docChromeSearch__paging .rc-pagination-item {
+  padding: 0 8px;
+}
+
+.docChromeSupport__title {
+  text-align: center;
+}
+
+.docChromeSupport__text {
+  color: #343741;
+}
+
+.docArticle__tocContainer {
+  top: 96px !important;
+  margin-top: 40px;
+  width: 224px;
+  max-height: calc(100vh - (96px)) !important;
+  overflow-x: hidden;
+}
+
+.docArticle__toc {
+  scrollbar-color: rgba(152, 162, 179, 0.5) transparent;
+  scrollbar-width: thin;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  mask-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.1) 0%, red 7.5px, red calc(100% - 7.5px), rgba(255, 0, 0, 0.1) 100%);
+  transition: height 150ms cubic-bezier(0.694, 0.0482, 0.335, 1);
+  height: auto;
+  overflow-x: hidden;
+}
+.docArticle__toc::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+.docArticle__toc::-webkit-scrollbar-thumb {
+  background-color: rgba(152, 162, 179, 0.5);
+  background-clip: content-box;
+  border-radius: 16px;
+  border: 6px solid transparent;
+}
+.docArticle__toc::-webkit-scrollbar-corner, .docArticle__toc::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.docArticle__toc:focus {
+  outline: none;
+  /* 1 */
+}
+.docArticle__toc[tabindex="0"]:focus:focus-visible {
+  outline-style: auto;
+  /* 2 */
+}
+
+.docArticle__tocContent .euiSideNavItemButton {
+  border-left: 2px solid #25262E;
+  padding-left: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.docArticle__tocContent .euiSideNavItemButton::first-letter {
+  text-transform: uppercase;
+}
+.docArticle__tocContent .euiSideNavItemButton:hover {
+  text-decoration: underline;
+}
+.docArticle__tocContent .euiSideNavItemButton.node-name--H3, .docArticle__tocContent .euiSideNavItemButton.node-name--H4, .docArticle__tocContent .euiSideNavItemButton.node-name--H5 {
+  padding-left: 24px;
+  color: #7a7f89;
+}
+.docArticle__tocContent .euiSideNavItemButton.docArticle__tocContent--active {
+  font-weight: 700;
+  border-color: #535966;
+  color: #DFE5EF;
+}
+
+.docChromeSearchSidebarPromo {
+  max-width: 17rem;
+  background: url("/assets/images/abstract/cloudblue-grey-cloud.svg") no-repeat 100% 0.5rem;
+}
+.docChromeSearchSidebarPromo .docChromeSearchSidebarPromo__panel {
+  background-color: transparent !important;
+}
+
+.elasticMark {
+  margin-top: 0.1875rem;
+}
+
+.missionCard {
+  background: #1D1E24;
+}
+
+.euiFlexGroup.docArticle__wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.docArticle__article {
+  width: calc(90% - 225px);
+  padding: 40px 24px 24px;
+}
+.docArticle__article h1, .docArticle__article h2, .docArticle__article h3, .docArticle__article h4, .docArticle__article h5 {
+  scroll-margin-top: 96px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .docArticle__article {
+    padding-right: 32px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .docArticle__article {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docArticle__article {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.docArticle__headerLink {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -32px;
+  width: 32px;
+  top: -8px;
+  padding: 8px;
+}
+.docArticle__headerLink:hover, .docArticle__headerLink:focus {
+  opacity: 1;
+  visibility: visible;
+}
+.docArticle__headerLink svg {
+  fill: #FFF;
+}
+
+h2:hover .docArticle__headerLink, h3:hover .docArticle__headerLink, h4:hover .docArticle__headerLink, h5:hover .docArticle__headerLink, h6:hover .docArticle__headerLink {
+  opacity: 1;
+  visibility: visible;
+}
+
+.euiSelectableTemplateSitewide__list .euiSelectableListItem__icon {
+  display: none;
+}
+
+.euiListGroupItem.euiListGroupItem-isActive.euiListGroupItem-isActive {
+  color: #36A2EF;
+  background-color: rgba(54, 162, 239, 0.2);
+}
+.euiListGroupItem.euiListGroupItem-isActive.euiListGroupItem-isActive:not([class*=isDisabled]):hover, .euiListGroupItem.euiListGroupItem-isActive.euiListGroupItem-isActive:not([class*=isDisabled]):focus {
+  background-color: rgba(54, 162, 239, 0.2);
+}
+.euiListGroupItem.euiListGroupItem-isActive.euiListGroupItem-isActive .euiListGroupItem__button {
+  color: inherit !important;
+  font-weight: 700;
+}
+
+.euiText p {
+  margin-bottom: 0 !important;
+}
+.euiText p:not(:last-child) {
+  margin-bottom: 1.5rem !important;
+}
+.euiText .euiImage__img, .euiText .docBadge {
+  margin-bottom: 0 !important;
+}
+.euiText .docVideo, .euiText .docWhimsical, .euiText .docCallOut, .euiText .docAccordion:not(:last-child), .euiText .euiTable {
+  margin-bottom: 24px;
+}
+.euiText ul ul, .euiText ul ol, .euiText ol ul, .euiText ol ol {
+  margin-bottom: 0;
+}
+.euiText blockquote {
+  font-size: 12px;
+  font-size: 0.8571428571rem;
+  line-height: 1.1428571429rem;
+  text-align: left !important;
+  line-height: 1.4;
+  border-left: 2px solid #343741;
+  padding: 16px;
+}
+.euiText blockquote::before, .euiText blockquote::after {
+  height: 0;
+  width: 0;
+  background: none !important;
+  transform: none;
+}
+
+.docHome__content__hero, .docHome__content__hero2,
+.docHome__content__hero3 {
+  padding: 40px 32px;
+  background: #25262E;
+  border-bottom: #444855 1px solid;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 574px) {
+  .docHome__content__hero, .docHome__content__hero2,
+.docHome__content__hero3 {
+    padding: 8px 24px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docHome__content__hero, .docHome__content__hero2,
+.docHome__content__hero3 {
+    padding: 8px 24px;
+  }
+}
+.docHome__content__hero .docHome__content__container, .docHome__content__hero2 .docHome__content__container,
+.docHome__content__hero3 .docHome__content__container {
+  width: 87.5%;
+  max-width: 1180px;
+  padding: 40px 32px;
+}
+.docHome__content__hero .docHome__content__container .docHome__content_image-cloud, .docHome__content__hero2 .docHome__content__container .docHome__content_image-cloud,
+.docHome__content__hero3 .docHome__content__container .docHome__content_image-cloud {
+  max-height: 355px;
+}
+@media only screen and (max-width: 574px) {
+  .docHome__content__hero .docHome__content__container, .docHome__content__hero2 .docHome__content__container,
+.docHome__content__hero3 .docHome__content__container {
+    padding: 12px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .docHome__content__hero .docHome__content__container .docHome__content_image-cloud, .docHome__content__hero2 .docHome__content__container .docHome__content_image-cloud,
+.docHome__content__hero3 .docHome__content__container .docHome__content_image-cloud {
+    max-width: 240px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docHome__content__hero .docHome__content__container, .docHome__content__hero2 .docHome__content__container,
+.docHome__content__hero3 .docHome__content__container {
+    padding: 12px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .docHome__content__hero .docHome__content__container .docHome__content_image-cloud, .docHome__content__hero2 .docHome__content__container .docHome__content_image-cloud,
+.docHome__content__hero3 .docHome__content__container .docHome__content_image-cloud {
+    max-width: 240px;
+  }
+}
+.docHome__content__hero .docHome__content__listGroup, .docHome__content__hero2 .docHome__content__listGroup,
+.docHome__content__hero3 .docHome__content__listGroup {
+  margin: 0;
+}
+.docHome__content__hero .docHome__content__cta, .docHome__content__hero2 .docHome__content__cta,
+.docHome__content__hero3 .docHome__content__cta {
+  width: 160px;
+}
+
+.docHome__content__hero2 {
+  background: #1D1E24;
+}
+@media only screen and (max-width: 574px) {
+  .docHome__content__hero2 .docHome__content__container {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docHome__content__hero2 .docHome__content__container {
+    flex-direction: row;
+  }
+}
+.docHome__content__hero2 .docHome__content__centerAlign {
+  text-align: center;
+  display: flex;
+  padding-left: 64px;
+}
+@media only screen and (max-width: 574px) {
+  .docHome__content__hero2 .docHome__content__centerAlign {
+    padding: 12px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .docHome__content__hero2 .docHome__content__centerAlign {
+    padding: 12px;
+  }
+}
+.docHome__content__hero2 .docHome__content__centerAlign .docHome__content__centerAlign__buttonWrapper {
+  justify-content: center;
+}
