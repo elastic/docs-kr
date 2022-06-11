@@ -1,14 +1,16 @@
 {
   "mission": "Elastic 데모 모음",
   "id": "krDemos",
-  "landingPageId": "overview",
+  "landingPageId": "demo-Overview",
   "icon": "dashboardApp",
   "description": "발표나 스터디 등에서 사용 가능한 데모들을 모아놓은 페이지 입니다.",
   "items": [
     {
       "label": "Elastic 데모 모음",
       "items": [
-        { "id": "overview", "label": "데모 모음 페이지 안내" }
+        { "id": "demo-Overview", "label": "데모 모음 페이지 안내" },
+        { "id": "demo-seoulMetro2022", "label": "(2022) 서울시 지하철 대시보드 만들기" },
+        { "id": "demo-koreanNLPClassification", "label": "한국어 Classification 데모" }
       ]
     }
   ]
