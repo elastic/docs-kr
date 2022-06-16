@@ -74,6 +74,25 @@
         { "id": "esG7-06-06-token-filter", "label": "6.6 토큰 필터 - Token Filter" },
         { "id": "esG7-06-07-stemming", "label": "6.7 형태소 분석 - Stemming" }
       ]
+    },
+    {
+      "label": "7. 인덱스 설정과 매핑",
+      "items": [
+        { "id": "esG7-07-overview", "label": "7. 인덱스 설정과 매핑 - Settings & Mappings" },
+        { "id": "esG7-07-01-settings", "label": "7.1 설정 - Settings" },
+        { "id": "esG7-07-02-mappings", "label": "7.2 매핑 - Mappings" },
+        { "id": "esG7-07-03-multifields", "label": "7.3 멀티 (다중) 필드 - Multi Fields" }
+      ]
+    },
+    {
+      "label": "8. 집계 - Aggregations",
+      "items": [
+        { "id": "esG7-08-overview", "label": "8. 집계 - Aggregations" },
+        { "id": "esG7-08-01-metric-aggs", "label": "8.1 메트릭 - Metrics Aggregations" },
+        { "id": "esG7-08-02-bucket-aggs", "label": "8.2 버킷 - Bucket Aggregations" },
+        { "id": "esG7-08-03-sub-aggs", "label": "8.3 하위 - sub-aggregations" },
+        { "id": "esG7-08-04-pipeline-aggs", "label": "8.4 파이프라인 - Pipeline Aggregations" }
+      ]
     }
   ]
 }
